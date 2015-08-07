@@ -13,6 +13,17 @@ Wheelie recipe
     :target: https://david-dm.org/palazzem/wheelie-recipe#info=devDependencies
     :alt: Dev Dependency Status
 
-A generic recipe for the Wheelie task registry.
+A generic recipe for the `Wheelie`_ task registry.
 
-Further information soon.
+.. _Wheelie: https://github.com/palazzem/wheelie
+
+Available tasks
+---------------
+
+* ``assets``
+* ``browser-sync``
+* ``jshint``
+* ``sass``
+* ``templates``
+* ``watch``
+* a generic ``build`` with ``--production`` flag
