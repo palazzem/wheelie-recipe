@@ -32,6 +32,10 @@
     "jshint-stylish": "^2.0.1"
   },
   "devDependencies": {
-    "wheelie": "0.1.0"
+    "gulp": "^3.9.0",
+    "jshint": "^2.8.0",
+    "mocha": "^2.2.5",
+    "testem": "^0.9.0-1",
+    "wheelie": "^0.1.0",
   }
 }
