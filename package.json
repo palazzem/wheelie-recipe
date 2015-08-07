@@ -32,6 +32,6 @@
     "jshint-stylish": "^2.0.1"
   },
   "devDependencies": {
-    "wheelie": "0.0.0"
+    "wheelie": "0.1.0"
   }
 }
