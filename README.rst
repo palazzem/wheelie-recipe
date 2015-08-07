@@ -1,6 +1,10 @@
 Wheelie recipe
 ==============
 
+.. image:: https://travis-ci.org/palazzem/wheelie-recipe.svg
+    :target: https://travis-ci.org/palazzem/wheelie-recipe
+    :alt: Build Status
+
 .. image:: https://david-dm.org/palazzem/wheelie-recipe.svg
     :target: https://david-dm.org/palazzem/wheelie-recipe
     :alt: Dependency Status
