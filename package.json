@@ -1,0 +1,25 @@
+{
+  "name": "wheelie-recipe",
+  "version": "0.0.0",
+  "description": "A generic recipe for the Wheelie task registry",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/palazzem/wheelie-recipe.git"
+  },
+  "keywords": [
+    "wheelie",
+    "gulp",
+    "frontend",
+    "toolchain"
+  ],
+  "author": "Emanuele Palazzetti <hello@palazzetti.me>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/palazzem/wheelie-recipe/issues"
+  },
+  "homepage": "https://github.com/palazzem/wheelie-recipe"
+}
