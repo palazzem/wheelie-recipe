@@ -1,0 +1,13 @@
+framework: mocha
+watch_files:
+    - index.js
+    - tasks/**/*.js
+    - tests/**/*.js
+launchers:
+    mocha:
+        command: node_modules/mocha/bin/mocha --require tests/setup.js --timeout 3000 tests/test_*.js -R tap
+        protocol: tap
+launch_in_dev:
+    - mocha
+launch_in_ci:
+    - mocha

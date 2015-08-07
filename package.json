@@ -4,7 +4,11 @@
   "description": "A generic recipe for the Wheelie task registry",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "pretest": "npm run jshint",
+    "test": "node_modules/testem/testem.js ci",
+    "test:tdd": "node_modules/testem/testem.js",
+    "jshint": "node_modules/jshint/bin/jshint tasks/*.js"
   },
   "repository": {
     "type": "git",
@@ -32,10 +36,11 @@
     "jshint-stylish": "^2.0.1"
   },
   "devDependencies": {
+    "chai": "^3.0.0",
     "gulp": "^3.9.0",
     "jshint": "^2.8.0",
     "mocha": "^2.2.5",
     "testem": "^0.9.0-1",
-    "wheelie": "^0.1.0",
+    "wheelie": "^0.1.0"
   }
 }
