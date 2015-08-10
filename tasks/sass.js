@@ -29,7 +29,7 @@ function run(gulp, config, globals) {
     sourcemaps = {
       init: noop,
       write: noop
-    }
+    };
   }
 
   return function() {
