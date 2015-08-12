@@ -3,6 +3,9 @@
 var Task = require('wheelie/lib/models/task');
 
 
+var dependencies = ['browser-sync', 'build', 'jshint'];
+
+
 function config(globals) {
   // TODO: we should get these values from the plugins registry
 
@@ -28,4 +31,4 @@ function run(gulp, config) {
   };
 }
 
-module.exports = new Task('watch', ['browser-sync', 'build'], run, config);
+module.exports = new Task('watch', dependencies, run, config);
