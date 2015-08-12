@@ -14,7 +14,7 @@ var handlebars = require('gulp-handlebars');
 function config(globals) {
   return {
     src: globals.src + 'partials/**',
-    dest: globals.dest + 'js/',
+    dest: globals.src + 'js/',
     namespace: 'Templates'
   };
 }
