@@ -14,6 +14,7 @@ function config(globals) {
     assets: globals.src + 'assets/**',
     templates: globals.src + 'templates/**',
     handlebars: globals.src + 'partials/**',
+    uglify: 'js/**/*.js',
     jshint: [
       'gulpfile.js',
       globals.src + 'js/**/*.js'
@@ -27,6 +28,7 @@ function run(gulp, config) {
     gulp.watch(config.assets, ['assets']);
     gulp.watch(config.templates, ['templates']);
     gulp.watch(config.handlebars, ['handlebars']);
+    gulp.watch(config.uglify, ['uglify']);
     gulp.watch(config.jshint, ['jshint']);
   };
 }
