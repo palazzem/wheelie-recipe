@@ -26,5 +26,6 @@ Available tasks
 * ``sass``
 * ``templates``
 * ``handlebars``
+* ``uglify``
 * ``watch``
 * a generic ``build`` with ``--production`` flag
