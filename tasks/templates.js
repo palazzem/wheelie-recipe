@@ -5,7 +5,7 @@ var Task = require('wheelie/lib/models/task');
 
 function config(globals) {
   return {
-    src: globals.src + '/templates/**',
+    src: globals.src + 'templates/**',
     dest: globals.dest + '/'
   };
 }

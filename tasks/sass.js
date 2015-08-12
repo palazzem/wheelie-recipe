@@ -14,10 +14,10 @@ var browserSync = require('browser-sync');
 
 function config(globals) {
   return {
-    src: globals.src + '/scss/**/*.{sass,scss}',
-    dest: globals.dest + '/css',
+    src: globals.src + 'scss/**/*.{sass,scss}',
+    dest: globals.dest + 'css/',
     sourceComments: 'map',
-    imagePath: '/images',
+    imagePath: 'images/',
     autoprefixer: ['last 2 version']
   };
 }

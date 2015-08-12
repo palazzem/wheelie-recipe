@@ -12,7 +12,7 @@ function config(globals) {
   return {
     src: [
       'gulpfile.js',
-      globals.src + '/js/**/*.js'
+      globals.src + 'js/**/*.js'
     ]
   };
 }

@@ -12,8 +12,8 @@ function config(globals) {
       baseDir: globals.dest
     },
     files: [
-      globals.dest + '/**',
-      '!' + globals.dest + '/**.map'
+      globals.dest + '**',
+      '!' + globals.dest + '**.map'
     ],
     port: 3000,
     open: false,

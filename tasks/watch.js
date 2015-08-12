@@ -7,13 +7,13 @@ function config(globals) {
   // TODO: we should get these values from the plugins registry
 
   return {
-    sass: globals.src + '/scss/**/*.{sass,scss}',
-    assets: globals.src + '/assets/**',
-    templates: globals.src + '/templates/**',
-    handlebars: globals.src + '/partials/**',
+    sass: globals.src + 'scss/**/*.{sass,scss}',
+    assets: globals.src + 'assets/**',
+    templates: globals.src + 'templates/**',
+    handlebars: globals.src + 'partials/**',
     jshint: [
       'gulpfile.js',
-      globals.src + '/js/**/*.js'
+      globals.src + 'js/**/*.js'
     ]
   };
 }
