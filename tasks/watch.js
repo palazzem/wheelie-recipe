@@ -14,7 +14,7 @@ function config(globals) {
     assets: globals.src + 'assets/**',
     templates: globals.src + 'templates/**',
     handlebars: globals.src + 'partials/**',
-    uglify: 'js/**/*.js',
+    uglify: globals.src + 'js/**/*.js',
     jshint: [
       'gulpfile.js',
       globals.src + 'js/**/*.js'
