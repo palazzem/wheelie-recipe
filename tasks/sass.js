@@ -6,7 +6,7 @@ var noop = require('wheelie/lib/helpers/noop');
 
 // external plugins
 var sass = require('gulp-sass');
-var minifyCss = require('gulp-minify-css');
+var cleanCSS = require('gulp-clean-css');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync');
@@ -24,7 +24,7 @@ function config(globals) {
 
 function run(gulp, config, globals) {
   if (!globals.production) {
-    minifyCss = noop;
+    cleanCSS = noop;
   } else {
     sourcemaps = {
       init: noop,
@@ -38,7 +38,7 @@ function run(gulp, config, globals) {
         .pipe(sass(config))
         .on('error', handlers.notifyError)
         .pipe(autoprefixer({ browsers: config.autoprefixer }))
-        .pipe(minifyCss())
+        .pipe(cleanCSS())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(config.dest))
         .pipe(browserSync.reload({ stream:true }));
