@@ -7,10 +7,9 @@ var jshint = require('./tasks/jshint');
 var sass = require('./tasks/sass');
 var uglify =require('./tasks/uglify');
 var templates = require('./tasks/templates');
-var handlebars = require('./tasks/handlebars');
 var watch = require('./tasks/watch');
 
 module.exports = [
   assets, browserSync, build, jshint,
-  sass, uglify, templates, handlebars, watch
+  sass, uglify, templates, watch
 ];

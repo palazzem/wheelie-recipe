@@ -5,6 +5,6 @@ var recipe = require('../index');
 
 describe('The recipe', function() {
   it('should provide a set of tasks', function() {
-    expect(recipe.length).toBe(9);
+    expect(recipe.length).toBe(8);
   });
 });
