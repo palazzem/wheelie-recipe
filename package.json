@@ -37,12 +37,12 @@
     "gulp-sass": "2.3.2",
     "gulp-sourcemaps": "1.6.0",
     "gulp-uglify": "2.0.0",
+    "jshint": "2.9.2",
     "jshint-stylish": "2.2.0"
   },
   "devDependencies": {
     "gulp": "3.9.1",
     "jest-cli": "14.1.0",
-    "jshint": "2.9.2",
     "wheelie": "0.3.0"
   }
 }
