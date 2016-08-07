@@ -1,6 +1,10 @@
 Wheelie recipe
 ==============
 
+.. image:: https://badge.fury.io/js/wheelie-recipe.svg
+    :target: https://badge.fury.io/js/wheelie-recipe
+    :alt: Package version
+
 .. image:: https://travis-ci.org/palazzem/wheelie-recipe.svg
     :target: https://travis-ci.org/palazzem/wheelie-recipe
     :alt: Build Status
