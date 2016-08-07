@@ -13,8 +13,11 @@ var browserSync = require('browser-sync');
 
 
 function config(globals) {
+  var source = globals.src + 'scss/**/*.{sass,scss}';
+
   return {
-    src: globals.src + 'scss/**/*.{sass,scss}',
+    watcher: source,
+    src: source,
     dest: globals.dest + 'css/',
     sourceComments: 'map',
     imagePath: 'images/',

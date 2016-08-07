@@ -9,11 +9,14 @@ var stylish = require('jshint-stylish');
 
 
 function config(globals) {
+  var source = [
+    'gulpfile.js',
+    globals.src + 'js/**/*.js'
+  ];
+
   return {
-    src: [
-      'gulpfile.js',
-      globals.src + 'js/**/*.js'
-    ]
+    watcher: source,
+    src: source
   };
 }
 

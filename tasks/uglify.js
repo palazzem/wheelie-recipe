@@ -12,6 +12,7 @@ var sourcemaps = require('gulp-sourcemaps');
 
 function config(globals) {
   return {
+    watcher: globals.src + 'js/**/*.js',
     scripts: [],
     scriptsPath: globals.src + 'js/',
     vendors: [],

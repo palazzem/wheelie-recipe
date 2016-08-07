@@ -25,7 +25,6 @@ Available tasks
 * ``jshint``
 * ``sass``
 * ``templates``
-* ``handlebars``
 * ``uglify``
 * ``watch``
 * a generic ``build`` with ``--production`` flag

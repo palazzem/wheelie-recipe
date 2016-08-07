@@ -4,8 +4,11 @@ var Task = require('wheelie/lib/models/task');
 
 
 function config(globals) {
+  var source = globals.src + 'assets/**';
+
   return {
-    src: globals.src + 'assets/**',
+    watcher: source,
+    src: source,
     dest: globals.dest + 'assets/'
   };
 }
