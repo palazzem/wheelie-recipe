@@ -17,8 +17,39 @@ A generic recipe for the `Wheelie`_ task registry.
 
 .. _Wheelie: https://github.com/palazzem/wheelie
 
-Available tasks
+Getting started
 ---------------
+
+To use this recipe, add the following configuration on your ``gulpfile.js``:
+
+.. code-block:: javascript
+
+    var gulp = require('gulp');
+
+    var Wheelie = require('wheelie');
+    var recipe = require('wheelie-recipe');
+
+    var wheelie = new Wheelie();
+    wheelie.add(recipe);
+    wheelie.build();
+
+Disable components
+~~~~~~~~~~~~~~~~~~
+
+This recipe starts automatically the ``browser-sync`` task; if you want to disable
+it because you're using another tool or a web framework, add this configuration:
+
+.. code-block:: javascript
+
+    var wheelie = new Wheelie();
+    wheelie.add(recipe);
+    wheelie.disable('browser-sync');
+    wheelie.build();
+
+Components
+----------
+
+The following tasks are exported:
 
 * ``assets``
 * ``browser-sync``
@@ -27,4 +58,9 @@ Available tasks
 * ``templates``
 * ``uglify``
 * ``watch``
-* a generic ``build`` with ``--production`` flag
+* ``build``
+
+All tasks handle the ``--production`` flag so to create a production ready build, launch
+the command::
+
+    $ gulp build --production
